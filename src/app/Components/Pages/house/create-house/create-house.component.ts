@@ -54,7 +54,7 @@ export class CreateHouseComponent implements OnInit {
   transferFormData() {
     this.house = {
       nameHouse: this.createForm.get('nameHouse').value,
-      categoryHouse: this.createForm.get('categoryHouse').value,
+      categoryHouse: null,
       // categoryRoom: this.createForm.get('categoryRoom').value,
       address: this.createForm.get('address').value,
       amountBathRoom: this.createForm.get('amountBathRoom').value,
@@ -62,7 +62,8 @@ export class CreateHouseComponent implements OnInit {
       price: null,
       description: this.createForm.get('description').value,
       statusHouse: true,
-      imageUrls: this.arrayPicture
+      imageUrls: this.arrayPicture,
+      rooms: []
     };
   }
 
