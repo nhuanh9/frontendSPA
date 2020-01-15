@@ -1,16 +1,17 @@
 import {Role} from './role';
 
 
-export interface User {
-  id?: number;
+export interface UserToken {
+  id: number;
   username: string;
   password: string;
   confirmPassword?: string;
-  firstName: string;
-  lastName: string;
+  accessToken?: string;
+  firstName?: string;
+  lastName?: string;
+  gender?: string;
   email?: string;
   phoneNumber?: string;
-  gender?: string;
   enabled?: boolean;
-  roles?: [Role];
+  roles: Role[];
 }

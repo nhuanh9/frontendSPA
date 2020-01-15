@@ -2,7 +2,7 @@ export interface House {
   id ?: string;
   nameHouse: string;
   categoryHouse?: string;
-  // categoryRoom?: string;
+  rooms: [];
   address: string;
   amountBathRoom: string;
   amountBedRoom: string;

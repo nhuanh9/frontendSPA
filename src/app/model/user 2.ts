@@ -8,9 +8,9 @@ export interface User {
   confirmPassword?: string;
   firstName: string;
   lastName: string;
+  gender?: string;
   email?: string;
   phoneNumber?: string;
-  gender?: string;
   enabled?: boolean;
   roles?: [Role];
 }
